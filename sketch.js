@@ -1,4 +1,4 @@
-let size = 75;
+let size = 150;
 
 function setup() {
   createCanvas(600, 600);
@@ -10,7 +10,11 @@ function draw() {
   fill(random(255), random(255), random(255), random(255));
   circle(mouseX, mouseY, size);
   if (mouseIsPressed) {
-    size += 2;
+    size -= 2;
+    if (size <= 25) {
+      size = 25;
+    }
   }
+
   // line(300, 300, mouseX, mouseY);
 }
