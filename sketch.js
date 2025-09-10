@@ -4,8 +4,7 @@ function setup() {
 
 function draw() {
   background("#476EAE");
-  rectMode(CENTER);
+  // line(0, 0, mouseX, mousey);
   noStroke();
-
-  rect(width / 2, height / 2, 150, 150, 12);
+  circle(mouseX, mouseY, 20);
 }
