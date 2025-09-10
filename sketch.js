@@ -1,3 +1,5 @@
+let size = 75;
+
 function setup() {
   createCanvas(600, 600);
   background("#476EAE");
@@ -6,6 +8,9 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   fill(random(255), random(255), random(255), random(255));
-  circle(mouseX, mouseY, 150);
+  circle(mouseX, mouseY, size);
+  if (mouseIsPressed) {
+    size += 2;
+  }
   // line(300, 300, mouseX, mouseY);
 }
