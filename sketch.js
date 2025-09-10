@@ -12,6 +12,20 @@ function draw() {
   if (keyIsPressed) {
     if (keyCode === LEFT_ARROW) {
       x -= 4;
+    } else if (keyCode === RIGHT_ARROW) {
+      x += 4;
+    } else if (keyCode === UP_ARROW) {
+      y -= 4;
+    } else if (keyCode === DOWN_ARROW) {
+      y += 4;
     }
+  }
+
+  if (x - size / 2 >= width) {
+    x = 0;
+  }
+
+  if (y - size / 2 >= height) {
+    y = 0;
   }
 }
