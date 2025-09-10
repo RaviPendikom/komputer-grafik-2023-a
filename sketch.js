@@ -28,4 +28,12 @@ function draw() {
   if (y - size / 2 >= height) {
     y = 0;
   }
+
+  if (x + size / 2 <= 0) {
+    x = width;
+  }
+
+  if (y + size / 2 <= 0) {
+    y = width;
+  }
 }
