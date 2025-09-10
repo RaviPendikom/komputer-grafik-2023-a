@@ -4,5 +4,8 @@ function setup() {
 }
 
 function draw() {
-  line(pmouseX, pmouseY, mouseX, mouseY);
+  rectMode(CENTER);
+  fill(random(255), random(255), random(255), random(255));
+  circle(mouseX, mouseY, 150);
+  // line(300, 300, mouseX, mouseY);
 }
