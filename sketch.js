@@ -1,20 +1,17 @@
-let size = 150;
+let x = 300;
+let y = 300;
+let size = 50;
 
 function setup() {
   createCanvas(600, 600);
-  background("#476EAE");
 }
 
 function draw() {
-  rectMode(CENTER);
-  fill(random(255), random(255), random(255), random(255));
-  circle(mouseX, mouseY, size);
-
+  background("#476EAE");
+  circle(x, y, size);
   if (keyIsPressed) {
-    size += 2;
-  }
-
-  if (mouseIsPressed) {
-    size -= 2;
+    if (keyCode === LEFT_ARROW) {
+      x -= 4;
+    }
   }
 }
