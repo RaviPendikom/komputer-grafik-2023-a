@@ -9,12 +9,12 @@ function draw() {
   rectMode(CENTER);
   fill(random(255), random(255), random(255), random(255));
   circle(mouseX, mouseY, size);
-  if (mouseIsPressed) {
-    size -= 2;
-    if (size <= 25) {
-      size = 25;
-    }
+
+  if (keyIsPressed) {
+    size += 2;
   }
 
-  // line(300, 300, mouseX, mouseY);
+  if (mouseIsPressed) {
+    size -= 2;
+  }
 }
