@@ -1,9 +1,11 @@
 function setup() {
   createCanvas(600, 600);
-  background("#476EAE");
 }
 
 function draw() {
+  background("#476EAE");
   rectMode(CENTER);
-  rect(300, 300, 150, 150);
+  noStroke();
+
+  rect(width / 2, height / 2, 150, 150, 12);
 }
